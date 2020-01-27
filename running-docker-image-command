@@ -1,0 +1,9 @@
+docker run -v /root/task/eurustech.conf:/etc/nginx/conf.d/default.conf -v /root/task/hrm.conf:/etc/nginx/sites-available/hrm.conf -p 80:80 -p 443:443 -e DOMAIN=eurustechnology1.scaleops.info -e DOMAIN2=hrmeurustech1.scaleops.info --name test -d nginx-certbot
+
+
+
+docker run  -v /root/task/mix.conf:/etc/nginx/sites-available/hrm.conf -p 80:80 -p 443:443 -e DOMAIN=eurustechnology1.scaleops.info -e DOMAIN2=hrmeurustech1.scaleops.info --name test -d nginx-certbot
+
+last-one-most-successfull-one
+docker run  -v /root/task/default.conf:/etc/nginx/conf.d/default.conf  -v /root/task/mix.conf:/etc/nginx/sites-available/hrm.conf -p 80:80 -p 443:443 -e DOMAIN=eurustechnology111.scaleops.info -e DOMAIN2=hrmeurustech111.scaleops.info --name test -d  ngc
+
